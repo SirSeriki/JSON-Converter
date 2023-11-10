@@ -35,7 +35,7 @@ str(df2)
 str(df4)
 view(df)
 
-# Finding the top 30 usernames ranked by followers count 
+#Dropping null values 
 
 df %>% 
   drop_na(url)
@@ -46,9 +46,8 @@ df %>%
 # arrange(public_metrics.followers_count,public_metrics.listed_count) %>%
 # group_by(username) %>%
 
-df$username
+Print(df$username)
 
-#Checking NA values from the dataframe 
 is.na(df$location)
 na.fail(df$location)
 any(is.na(df))
